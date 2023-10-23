@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>GeoRAD App</title>
+  </head>
+  <body>
+    <header class="w-full flex-col bg-slate-900 pb-2">
+      <div
+        class="w-full flex flex-row bg-violet-900 justify-between items-center px-8 py-4 text-white flex-wrap"
+      >
+        <a href="/">
+          <h1 class="text-white text-lg font-semibold">GeoRAD</h1>
+        </a>
+        <nav class="md:flex gap-2 flex-wrap hidden">
+          <button
+            class="px-4 py-2 rounded-lg border-b hover:border-b-blue-400 hover:text-blue-400 font-semibold"
+          >
+            Criação
+          </button>
+          <button
+            class="px-4 py-2 rounded-lg border-b hover:border-b-blue-400 hover:text-blue-400 font-semibold"
+          >
+            Calculadora
+          </button>
+          <a
+            href="/game"
+            class="px-4 py-2 rounded-lg border-b text-green-400 hover:border-b-blue-400 hover:text-blue-400 font-semibold"
+          >
+            Jogo
+          </a>
+        </nav>
+
+        <img
+          id="ativarMenu"
+          src="/imgs/icons/menu-icon.svg"
+          class="md:hidden w-8 h-8 text-white hover:animate-pulse"
+        />
+      </div>
+      <!-- isMenuActive ? "flex" : "hidden" -->
+      <div
+        id="menu"
+        class="hidden text-white text-sm w-full md:hidden rounded-b-full shadow-md drop-shadow-2xl shadow-violet-400 flex-row justify-center items-center gap-2 px-4 py-2 bg-violet-800"
+      >
+        <button class="hover:text-blue-400 border-r pr-2 rounded-r-lg">
+          Criação
+        </button>
+        <button class="hover:text-blue-400 border-r pr-2 rounded-r-lg">
+          Calculadora
+        </button>
+        <a href="/game/index.html" class="hover:text-blue-400"> Jogo </a>
+      </div>
+    </header>
+
+    <main
+      class="flex min-h-screen flex-col items-center p-8 md:px-24 py-4 bg-slate-900"
+    ></main>
+
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>
